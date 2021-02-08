@@ -4,7 +4,7 @@ class CreatePlants < ActiveRecord::Migration[6.1]
       t.string :common_name
       t.string :scientific_name
       t.integer :api_id
-      t.reference :garden
+      t.references :garden
 
       t.timestamps
     end
