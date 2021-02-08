@@ -11,6 +11,23 @@
   </head>
 
   <body>
+
+    <div>
+        <% if logged_in?%>
+
+        <% else %>
+        <%=link_to "Sign Up", signup_path %> |
+        <%=link_to "Log In", login_path %>
+        <% end %>
+    </div>
+
+    <div>
+      <% if flash[:message] %>
+          <%= flash[:message]%>
+
+      <% end %>
+      <%= @error%>
+    </div>  
     <%= yield %>
   </body>
 </html>
