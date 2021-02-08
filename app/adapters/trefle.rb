@@ -14,6 +14,16 @@ module Trefle
                 }
             )
         end
+
+        def self.get_plant_by_name(name)
+            url = BASE_URL + "/api/plants?q=#{name}"
+            return HTTParty.get(
+                'https://trefle.io/api/plants/#{id}'
+                query: {
+                    "token": API_KEY
+                }
+            )
+        end
     end
 
 end
