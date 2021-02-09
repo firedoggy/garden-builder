@@ -15,7 +15,7 @@ module Trefle
             )
         end
 
-        def self.get_plant_by_name(name)
+        def self.search_plant_by_name(name)
             url = BASE_URL + "/api/plants?q=#{name}"
             return HTTParty.get(
                 'https://trefle.io/api/plants/#{id}'
@@ -24,6 +24,11 @@ module Trefle
                 }
             )
         end
+
+        def self.search(plant)
+            plants = search_plant_by_name(plant)
+        end
+        
     end
 
 end
