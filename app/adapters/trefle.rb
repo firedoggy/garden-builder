@@ -27,6 +27,7 @@ module Trefle
 
         def self.search(plant)
             plants = search_plant_by_name(plant)
+            @results = Plant.results_mapper(plants)
         end
         
     end
