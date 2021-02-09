@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
     delete '/logout' => 'sessions#destroy'
 
+    post 'plants/search' => 'plants#search', as: 'plants_search'
+
     resources :users
     resources :plants
     resources :gardens

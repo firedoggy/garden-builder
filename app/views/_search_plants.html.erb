@@ -1,0 +1,4 @@
+<%= form_tag(plants_search_path) do %>
+    <%= text_field_tag :name, nil, placeholder: 'Search for a plant' %>
+    <div class="card-button"> <%= submit_tag 'Search' %></div>
+<% end %>
