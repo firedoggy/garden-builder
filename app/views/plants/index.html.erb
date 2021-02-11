@@ -1,1 +1,17 @@
-<h1>Index</h1>
+
+<div class="container">
+<h2>Here's what we found for <%= @name%>:</h2>
+
+<div class="card-wrapper"> 
+<% @temp.each do |p| %>
+        <div class="card">
+        <h3>Common Name</h3> <%= p.common_name %><br>
+        <h3>Scientific Name</h3> <%= p.scientific_name %><br>
+        
+
+        
+        </div>
+<%end%>
+
+</div>
+</div>
