@@ -72,3 +72,36 @@
     background: #DADED4; /* Grey background */
     color: #3C403D;
   }
+
+
+  .card {
+    background-color: #f1f1f1; 
+    padding: 20px;
+    margin: 10px;
+    width: 11%; 
+    border-radius: 20px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    font-weight: normal;
+    color: #3C403D;
+    text-align: center;
+  
+  }
+  
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+  
+  }
+  
+  .card-button {
+    display: inline-block;
+    input[type=submit] { 
+      background-color:white; 
+      border: .5px solid darkgray;
+      color: #003366;
+      border-radius: 5px;
+      margin: 5px;
+    }
+  }

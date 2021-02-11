@@ -58,3 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'httparty', '~> 0.13.7'
 
 gem 'pry'
+
+gem 'omniauth-google-oauth2'
+gem 'omniauth-github', '~> 2.0'
